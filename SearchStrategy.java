@@ -25,7 +25,7 @@ public class SearchStrategy {
         int[] ownholes, opponentholes;
         int holenum = act.gb.holenum;
 
-        ArrayList<Action> possibleactions = new ArrayList<>();
+        ArrayList<Action> possibleactions = new ArrayList<Action>();
 
         for (int count = 0; count < holenum; count++) {
             // the next hole index to choose, when it's player2's turn, i doesn't equal to count

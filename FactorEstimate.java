@@ -36,6 +36,7 @@ public class FactorEstimate {
                     return Math.max(depth - 1, 1);
                 }
             }
+            filein.close();
             return depth;
         } catch (Exception e) {
             e.printStackTrace();
