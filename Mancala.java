@@ -19,13 +19,13 @@ public class Mancala {
     public static void calibrate() throws IOException {
         FileWriter fw = new FileWriter("speedTest.txt");
         fw.close();
-        fw = new FileWriter("speedTest.txt", true);
         int depth = 1;
         while (depth < 15) {
+            fw = new FileWriter("speedTest.txt", true);
             fw.write(getTestCaseRunTime(depth)+"\n");
+            fw.close();
             depth++;
         }
-        fw.close();
     }
 
     public static long getTestCaseRunTime(int depth) {
