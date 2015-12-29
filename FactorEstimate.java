@@ -45,7 +45,7 @@ public class FactorEstimate {
     }
 
     public double calFactor() {
-        return Math.sqrt(allremainedstones / 48) * Math.pow(nonemptyholes / 6, 2);
+        return Math.sqrt(1.0 * allremainedstones / 48) * Math.pow(1.0 * nonemptyholes / 6, 2);
     }
 
 }
